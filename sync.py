@@ -93,7 +93,6 @@ class Sync(dotbot.Plugin):
                     '--recursive',
                     '--group',
                     '--owner',
-                    '--chown=%s:%s' % (owner, group),
                     '--chmod=D%s,F%s' % (dmode, fmode)]
             if os.path.isdir(source):
                 source = '%s/' % source
